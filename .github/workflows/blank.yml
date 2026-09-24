@@ -1,0 +1,13 @@
+
+name: QA Practice
+
+on: push
+
+jobs:
+  qa-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check calculator result
+        run: |
+          python -c "assert 2 + 3 == 5, 'Expected 5, but calculation failed'"
