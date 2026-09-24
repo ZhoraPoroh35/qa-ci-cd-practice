@@ -19,3 +19,10 @@ jobs:
       - name: Check multiplication
         run: |
           python -c "assert 5 * 5 == 25, 'Expected 25, but multiplication failed'"
+          
+      - name: Create test report
+        run: |
+          echo "QA TEST REPORT" > test-report.txt
+          echo "Calculator: PASS" >> test-report.txt
+          echo "Subtraction: PASS" >> test-report.txt
+          echo "Multiplication: PASS" >> test-report.txt
