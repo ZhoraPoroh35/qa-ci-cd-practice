@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Check calculator result
         run: |
-          python -c "assert 2 + 3 == 5, 'Expected 5, but calculation failed'"
+          python -c "assert 2 + 3 == 6, 'Expected 5, but calculation failed'"
