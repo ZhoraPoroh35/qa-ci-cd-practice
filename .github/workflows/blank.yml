@@ -13,7 +13,8 @@ jobs:
 
       - name: Check subtraction
         run: |
-          python -c "assert 10 - 4 == 7, 'Expected 6, but subtraction failed'"
+          python -c "assert 10 - 4 == 6, 'Expected 6, but subtraction failed'"
+          echo "TEST PASSED: 10 - 4 = 6"
 
       - name: Check multiplication
         run: |
